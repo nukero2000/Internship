@@ -1,0 +1,269 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B347DBD7-2B9D-49D8-A52E-E66049217907}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intership</RootNamespace>
+    <AssemblyName>Intership</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-grid.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.js" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.min.js" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\popper.min.js" />
+    <Content Include="codebase\dhtmlx\suite.css" />
+    <Content Include="codebase\dhtmlx\suite.js" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\app.css" />
+    <Content Include="css\floating-labels.css" />
+    <Content Include="css\materialdesignicons.css" />
+    <Content Include="imgs\19-Bnak Manager.png" />
+    <Content Include="imgs\23-Fiancial Document.png" />
+    <Content Include="imgs\24-Growth Investing.png" />
+    <Content Include="imgs\500.gif" />
+    <Content Include="imgs\6-ATM.png" />
+    <Content Include="imgs\abright.png" />
+    <Content Include="imgs\AdobeStock_132614367.jpeg" />
+    <Content Include="imgs\analysis.jpg" />
+    <Content Include="imgs\apps_thumbs\hoc.bt.wan_HouseOfCards.png" />
+    <Content Include="imgs\apps_thumbs\HOM.png" />
+    <Content Include="imgs\apps_thumbs\web04cj001.bt.wan_AcordGDPR.png" />
+    <Content Include="imgs\Banks\BT\01-Banca-Transilvania.jpg" />
+    <Content Include="imgs\Banks\BT\02-Banca-Transilvania.jpg" />
+    <Content Include="imgs\Banks\BT\logo_bt_200.png" />
+    <Content Include="imgs\Banks\BT\logo_bt_new.png" />
+    <Content Include="imgs\bg%402x.png" />
+    <Content Include="imgs\bg%403x.png" />
+    <Content Include="imgs\bg.png" />
+    <Content Include="imgs\browser%402x.png" />
+    <Content Include="imgs\browser%403x.png" />
+    <Content Include="imgs\browser.png" />
+    <Content Include="imgs\browser_phone%402x.png" />
+    <Content Include="imgs\browser_phone.png" />
+    <Content Include="imgs\buy-cash-coins-9660.jpg" />
+    <Content Include="imgs\call%402x.png" />
+    <Content Include="imgs\call%403x.png" />
+    <Content Include="imgs\call.png" />
+    <Content Include="imgs\Capture.JPG" />
+    <Content Include="imgs\choose.png" />
+    <Content Include="imgs\counterbg.jpg" />
+    <Content Include="imgs\Decision.png" />
+    <Content Include="imgs\f-logo-50.png" />
+    <Content Include="imgs\f-logo-512.png" />
+    <Content Include="imgs\Feature-Inclusivity2.jpg" />
+    <Content Include="imgs\feature.jpg" />
+    <Content Include="imgs\feedback.jpg" />
+    <Content Include="imgs\finance1.png" />
+    <Content Include="imgs\finance2.png" />
+    <Content Include="imgs\finance3.png" />
+    <Content Include="imgs\frontpage-bg%402x.png" />
+    <Content Include="imgs\frontpage-bg%403x.png" />
+    <Content Include="imgs\frontpage-bg.png" />
+    <Content Include="imgs\goodbadJS.jpg" />
+    <Content Include="imgs\group-214%402x.png" />
+    <Content Include="imgs\group-214%403x.png" />
+    <Content Include="imgs\group-214.png" />
+    <Content Include="imgs\g_log.png" />
+    <Content Include="imgs\g_log_50.png" />
+    <Content Include="imgs\homebg.jpg" />
+    <Content Include="imgs\i-phone%402x.png" />
+    <Content Include="imgs\i-phone%403x.png" />
+    <Content Include="imgs\i-phone.png" />
+    <Content Include="imgs\icons\boss-icon.png" />
+    <Content Include="imgs\icons\couple-2-icon.png" />
+    <Content Include="imgs\icons\couple-icon.png" />
+    <Content Include="imgs\icons\man-icon.png" />
+    <Content Include="imgs\icons\woman-icon.png" />
+    <Content Include="imgs\js\app.js" />
+    <Content Include="imgs\js\bootstrapValidator.js" />
+    <Content Include="imgs\js\frameworkbt.js" />
+    <Content Include="imgs\js\navbar-shrinker.js" />
+    <Content Include="imgs\js\wow\dist\wow.js" />
+    <Content Include="imgs\js\wow\dist\wow.min.js" />
+    <Content Include="imgs\logo%402x.png" />
+    <Content Include="imgs\logo%403x.png" />
+    <Content Include="imgs\logo.png" />
+    <Content Include="imgs\logo.svg" />
+    <Content Include="imgs\logo512.png" />
+    <Content Include="imgs\mobil-first-rect.png" />
+    <Content Include="imgs\mobile-first.jpg" />
+    <Content Include="imgs\mobileux-1.jpg" />
+    <Content Include="imgs\mobile_first.png" />
+    <Content Include="imgs\pf9.jpg" />
+    <Content Include="imgs\picjumbo-man-blog-710.jpg" />
+    <Content Include="imgs\register.jpg" />
+    <Content Include="imgs\registration-open-png-5.png" />
+    <Content Include="imgs\romania_64.png" />
+    <Content Include="imgs\romania_640.png" />
+    <Content Include="imgs\stab1.png" />
+    <Content Include="imgs\TransactionsModel.png" />
+    <Content Include="imgs\united_kingdom_64.png" />
+    <Content Include="imgs\united_kingdom_640.png" />
+    <Content Include="imgs\ux-article-img.jpg" />
+    <Content Include="imgs\videobg.jpg" />
+    <Content Include="imgs\Welcome-Confetti-Vector.png" />
+    <Content Include="imgs\Xamarin-performance.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\bootstrapValidator.js" />
+    <Content Include="js\frameworkbt.js" />
+    <Content Include="js\navbar-shrinker.js" />
+    <Content Include="js\wow\dist\wow.js" />
+    <Content Include="js\wow\dist\wow.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\app.css.map" />
+    <Content Include="css\app.less" />
+    <Content Include="css\fonts\Georgia Bold.ttf" />
+    <Content Include="css\fonts\Georgia.ttf" />
+    <Content Include="css\fonts\Handsome-Regular.ttf" />
+    <Content Include="css\fonts\MetaSerifPro-Bold.otf" />
+    <Content Include="css\fonts\MetaSerifPro-Book.otf" />
+    <Content Include="css\fonts\MetaSerifPro-Extrabold.otf" />
+    <Content Include="css\fonts\MetaSerifPro-Light.otf" />
+    <Content Include="css\fonts\MetaSerifPro-LightItalic.otf" />
+    <Content Include="css\fonts\MetaSerifPro-Medium.otf" />
+    <Content Include="css\fonts\MyriadPro-Regular.otf" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.js.map" />
+    <Content Include="codebase\bootstrap-4.3.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-bold-webfont.woff" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-bold-webfont.woff2" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-medium-webfont-latin-cyrillic.woff" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-medium-webfont-latin-cyrillic.woff2" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-regular-webfont-latin-cyrillic.woff" />
+    <Content Include="codebase\dhtmlx\fonts\roboto-regular-webfont-latin-cyrillic.woff2" />
+    <Content Include="imgs\browser_phone%402x.pdn" />
+    <Content Include="imgs\js\wow\dist\wow.js.map" />
+    <Content Include="imgs\js\wow\dist\wow.min.js.gz" />
+    <Content Include="imgs\mobile_first.pdn" />
+    <Content Include="js\wow\dist\wow.js.map" />
+    <Content Include="js\wow\dist\wow.min.js.gz" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57598</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57598/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
